@@ -38,10 +38,12 @@ def main():
     # pylint: disable-msg=anomalous-backslash-in-string
     temp = re.findall("[0-9]*\.[0-9]", str(temp_record))[0]
 
-    print("Datum: " + date)
-    print("Čas: " + time)
-    print("Teplota vody: " + temp + " °C")
+    out_data = "Datum: " + date + "\n"
+    out_data += "Čas: " + time + "\n"
+    out_data += "Teplota vody: " + temp + " °C" + "\n"
 
+    with open('chmu_teplota_vody.json', 'w') as out_file:
+        out_file.write(out_data)
 
 if __name__ == "__main__":
     main()
