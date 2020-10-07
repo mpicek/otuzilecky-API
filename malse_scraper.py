@@ -38,9 +38,9 @@ def main():
     # pylint: disable-msg=anomalous-backslash-in-string
     temp = re.findall("[0-9]*\.[0-9]", str(temp_record))[0]
 
-    print("Date: " + date)
-    print("Time: " + time)
-    print("Temperature: " + temp + " °C")
+    print("Datum: " + date)
+    print("Čas: " + time)
+    print("Teplota vody: " + temp + " °C")
 
 
 if __name__ == "__main__":
