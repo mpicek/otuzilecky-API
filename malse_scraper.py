@@ -36,7 +36,7 @@ def main():
 
     # tady vezmu nejakej pocet cisel, tecku a pak jedno cislo
     # pylint: disable-msg=anomalous-backslash-in-string
-    temp = re.findall("[0-9]*\.[0-9]", str(temp_record))[0]
+    temp = re.findall("[0-9]*[0-9]", str(temp_record))[0]
 
     out_data = "Datum: " + date + "\n"
     out_data += "Čas: " + time + "\n"
