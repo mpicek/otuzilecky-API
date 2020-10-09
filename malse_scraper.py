@@ -41,6 +41,7 @@ def main():
     out_data = "Datum: " + date + "\n"
     out_data += "Čas: " + time + "\n"
     out_data += "Teplota vody: " + temp + " °C" + "\n"
+    out_data += "TYS TO BYL"
 
     with open('chmu_teplota_vody.json', 'w') as out_file:
         out_file.write(out_data)
