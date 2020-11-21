@@ -65,7 +65,8 @@ def vypis_predpoved(forecast):
 
     text += 'Teplota: ' + str(forecast['temp']) + '\n'
     text += 'Pocitovka: ' + str(forecast['feels_like']) + '\n'
-    text += 'Otužilecký nebe: ' + str(100 - int(forecast['clouds'])) + ' %'
+    text += 'Otužilecký nebe: ' + str(100 - int(forecast['clouds'])) + ' %\n'
+    text += 'Chcanec: ' + str(forecast['pop']) + ' %'
     return text
 
 def main():
